@@ -101,7 +101,7 @@ if(isset($_POST['add_to_cart'])){
 
       <div class="content">
          <h3>Tentang Kami</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos enim minima ipsa dicta officia corporis ratione saepe sed adipisci?</p>
+         <p>Ruang Buku atau disapa RB adalah sebuah wadah yang mewadahi anak - anak untuk membaca buku.</p>
          <a href="about.php" class="btn">read more</a>
       </div>
 
@@ -121,7 +121,7 @@ if(isset($_POST['add_to_cart'])){
 
 <?php include 'footer.php'; ?>
 
-<script src="js/script.js"></script>
+<script src="public/JS/script.js"></script>
 
 </body>
 </html>
