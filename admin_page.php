@@ -18,7 +18,7 @@ if(!isset($admin_id)){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>admin panel</title>
+   <title>Dashboard Admin</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -35,7 +35,7 @@ if(!isset($admin_id)){
 
 <section class="dashboard">
 
-   <h1 class="title">dashboard</h1>
+   <h1 class="title">Dashboard</h1>
 
    <div class="box-container">
 
@@ -51,7 +51,7 @@ if(!isset($admin_id)){
             };
          ?>
          <h3>$<?php echo $total_pendings; ?>/-</h3>
-         <p>total pendings</p>
+         <p>Total Tertunda</p>
       </div>
 
       <div class="box">
@@ -66,7 +66,7 @@ if(!isset($admin_id)){
             };
          ?>
          <h3>$<?php echo $total_completed; ?>/-</h3>
-         <p>completed payments</p>
+         <p>Pembayaran Berhasil</p>
       </div>
 
       <div class="box">
@@ -127,17 +127,7 @@ if(!isset($admin_id)){
 
 </section>
 
-<!-- admin dashboard section ends -->
 
-
-
-
-
-
-
-
-
-<!-- custom admin js file link  -->
 <script src="js/admin_script.js"></script>
 
 </body>

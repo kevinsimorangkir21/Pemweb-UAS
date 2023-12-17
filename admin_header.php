@@ -15,13 +15,13 @@ if(isset($message)){
 
    <div class="flex">
 
-      <a href="admin_page.php" class="logo">Admin<span>Panel</span></a>
+      <a href="admin_page.php" class="logo">Dashboard<span>Admin</span></a>
 
       <nav class="navbar">
-         <a href="admin_page.php">home</a>
-         <a href="admin_products.php">products</a>
-         <a href="admin_orders.php">orders</a>
-         <a href="admin_users.php">users</a>
+         <a href="admin_page.php">Beranda</a>
+         <a href="admin_products.php">Produk</a>
+         <a href="admin_orders.php">Pesanan</a>
+         <a href="admin_users.php">Anggota</a>
          <a href="admin_contacts.php">messages</a>
       </nav>
 
@@ -31,10 +31,10 @@ if(isset($message)){
       </div>
 
       <div class="account-box">
-         <p>username : <span><?php echo $_SESSION['admin_name']; ?></span></p>
-         <p>email : <span><?php echo $_SESSION['admin_email']; ?></span></p>
-         <a href="logout.php" class="delete-btn">logout</a>
-         <div>new <a href="login.php">login</a> | <a href="register.php">register</a></div>
+         <p>Username : <span><?php echo $_SESSION['admin_name']; ?></span></p>
+         <p>Email : <span><?php echo $_SESSION['admin_email']; ?></span></p>
+         <a href="logout.php" class="delete-btn">Logout</a>
+         <div>Baru <a href="login.php">Masuk ?</a> | <a href="register.php">Daftar Yuk!</a></div>
       </div>
 
    </div>
