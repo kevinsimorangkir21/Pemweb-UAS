@@ -99,7 +99,7 @@ if(isset($_GET['delete_all'])){
 
 <?php include 'footer.php'; ?>
 
-<script src="js/script.js"></script>
+<script src="public/JS/script.js"></script>
 
 </body>
 </html>
