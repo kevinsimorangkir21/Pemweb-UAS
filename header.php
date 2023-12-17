@@ -34,7 +34,7 @@ if(isset($message)){
             <a href="about.php">Tentang</a>
             <a href="shop.php">Toko</a>
             <a href="contact.php">Kontak</a>
-            <a href="orders.php">orders</a>
+            <a href="orders.php">Pesanan</a>
          </nav>
 
          <div class="icons">
@@ -49,9 +49,9 @@ if(isset($message)){
          </div>
 
          <div class="user-box">
-            <p>username : <span><?php echo $_SESSION['user_name']; ?></span></p>
-            <p>email : <span><?php echo $_SESSION['user_email']; ?></span></p>
-            <a href="logout.php" class="delete-btn">logout</a>
+            <p>Username : <span><?php echo $_SESSION['user_name']; ?></span></p>
+            <p>Email : <span><?php echo $_SESSION['user_email']; ?></span></p>
+            <a href="logout.php" class="delete-btn">Keluar</a>
          </div>
       </div>
    </div>
