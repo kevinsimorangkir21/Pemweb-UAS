@@ -71,13 +71,12 @@ if(!isset($user_id)){
 
       <div class="box">
          <img src="public/assets/img/krisna.jpg" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
+         <p>Menurut saya, ini sangat luar biasa dan keren. Kemungkinan kedepannya akan semakin berkembang</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
          </div>
          <h3>Ignatius Krisna</h3>
       </div>
