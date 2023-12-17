@@ -49,9 +49,9 @@ if(isset($_POST['add_to_cart'])){
 <section class="home">
 
    <div class="content">
-      <h3>Hand Picked Book to your door.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quod? Reiciendis ut porro iste totam.</p>
-      <a href="about.php" class="white-btn">discover more</a>
+      <h3>Pilih Buku Terbaikmu.</h3>
+      <p>Jangan lupa baca buku, Buku adalah jembatan ilmu, jangan sampai dilupakan</p>
+      <a href="about.php" class="white-btn">Temukan Saya</a>
    </div>
 
 </section>
@@ -96,13 +96,13 @@ if(isset($_POST['add_to_cart'])){
    <div class="flex">
 
       <div class="image">
-         <img src="images/about-img.jpg" alt="">
+         <img src="public/assets/img/bacabuku.jpg" alt="">
       </div>
 
       <div class="content">
          <h3>Tentang Kami</h3>
          <p>Ruang Buku atau disapa RB adalah sebuah wadah yang mewadahi anak - anak untuk membaca buku.</p>
-         <a href="about.php" class="btn">read more</a>
+         <a href="about.php" class="btn">Baca Selanjutnya..</a>
       </div>
 
    </div>
@@ -113,8 +113,8 @@ if(isset($_POST['add_to_cart'])){
 
    <div class="content">
       <h3>Adakah sebuah pertanyaan?</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque exercitationem repellendus, amet ullam voluptatibus?</p>
-      <a href="contact.php" class="white-btn">contact us</a>
+      <p>Apabila Anda ada sebuah pertanyaan yang ingin ditanyakan silahkan klik Hubungi Kami.</p>
+      <a href="contact.php" class="white-btn">Hubungi Kami</a>
    </div>
 
 </section>
