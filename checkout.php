@@ -57,13 +57,10 @@ if(isset($_POST['order_btn'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>checkout</title>
+   <title>Checkout</title>
 
-   <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="public/CSS/style.css">
 
 </head>
 <body>
@@ -71,8 +68,8 @@ if(isset($_POST['order_btn'])){
 <?php include 'header.php'; ?>
 
 <div class="heading">
-   <h3>checkout</h3>
-   <p> <a href="home.php">home</a> / checkout </p>
+   <h3>Checkout</h3>
+   <p> <a href="home.php">Beranda</a> / Checkout </p>
 </div>
 
 <section class="display-order">
@@ -92,34 +89,33 @@ if(isset($_POST['order_btn'])){
       echo '<p class="empty">your cart is empty</p>';
    }
    ?>
-   <div class="grand-total"> grand total : <span>$<?php echo $grand_total; ?>/-</span> </div>
+   <div class="grand-total"> Total Keseluruhan : <span>$<?php echo $grand_total; ?>/-</span> </div>
 
 </section>
 
 <section class="checkout">
 
    <form action="" method="post">
-      <h3>place your order</h3>
+      <h3>Tempatkan di Pesanan</h3>
       <div class="flex">
          <div class="inputBox">
-            <span>your name :</span>
-            <input type="text" name="name" required placeholder="enter your name">
+            <span>Nama Anda :</span>
+            <input type="text" name="name" required placeholder="Masukkan Nama Anda">
          </div>
          <div class="inputBox">
-            <span>your number :</span>
-            <input type="number" name="number" required placeholder="enter your number">
+            <span>Nomor Anda :</span>
+            <input type="number" name="number" required placeholder="Masukkan Nomor Anda">
          </div>
          <div class="inputBox">
-            <span>your email :</span>
-            <input type="email" name="email" required placeholder="enter your email">
+            <span>Email Anda :</span>
+            <input type="email" name="email" required placeholder="Masukkan Email Anda">
          </div>
          <div class="inputBox">
-            <span>payment method :</span>
+            <span>Metode Pembayaran:</span>
             <select name="method">
-               <option value="cash on delivery">cash on delivery</option>
-               <option value="credit card">credit card</option>
-               <option value="paypal">paypal</option>
-               <option value="paytm">paytm</option>
+               <option value="cash on delivery">COD</option>
+               <option value="credit card">Kartu Kredit</option>
+               <option value="paypal">PayPal</option>
             </select>
          </div>
          <div class="inputBox">
@@ -131,20 +127,16 @@ if(isset($_POST['order_btn'])){
             <input type="text" name="street" required placeholder="e.g. street name">
          </div>
          <div class="inputBox">
-            <span>city :</span>
-            <input type="text" name="city" required placeholder="e.g. mumbai">
+            <span>Kota :</span>
+            <input type="text" name="city" required placeholder="Kota Anda">
          </div>
          <div class="inputBox">
-            <span>state :</span>
-            <input type="text" name="state" required placeholder="e.g. maharashtra">
+            <span>Negara :</span>
+            <input type="text" name="state" required placeholder="Asal Negara Anda">
          </div>
          <div class="inputBox">
-            <span>country :</span>
-            <input type="text" name="country" required placeholder="e.g. india">
-         </div>
-         <div class="inputBox">
-            <span>pin code :</span>
-            <input type="number" min="0" name="pin_code" required placeholder="e.g. 123456">
+            <span>Kode Pin :</span>
+            <input type="number" min="0" name="pin_code" required placeholder="Masukkan Kode Pin Anda">
          </div>
       </div>
       <input type="submit" value="order now" class="btn" name="order_btn">
@@ -152,17 +144,8 @@ if(isset($_POST['order_btn'])){
 
 </section>
 
-
-
-
-
-
-
-
-
 <?php include 'footer.php'; ?>
 
-<!-- custom js file link  -->
 <script src="js/script.js"></script>
 
 </body>
