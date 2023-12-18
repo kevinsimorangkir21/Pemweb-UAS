@@ -19,19 +19,19 @@ if(isset($_POST['submit'])){
          $_SESSION['admin_name'] = $row['name'];
          $_SESSION['admin_email'] = $row['email'];
          $_SESSION['admin_id'] = $row['id'];
-         header('location:admin_page.php');
+         header('location:halaman-admin.php');
 
       }elseif($row['user_type'] == 'user'){
 
          $_SESSION['user_name'] = $row['name'];
          $_SESSION['user_email'] = $row['email'];
          $_SESSION['user_id'] = $row['id'];
-         header('location:home.php');
+         header('location:index.php');
 
       }
 
    }else{
-      $message[] = 'incorrect email or password!';
+      $message[] = 'Password / Email Salah!';
    }
 
 }
@@ -69,9 +69,9 @@ if(isset($message)){
 
    <form action="" method="post">
       <h3>Masuk Sekarang</h3>
-      <input type="email" name="email" placeholder="enter your email" required class="box">
-      <input type="password" name="password" placeholder="enter your password" required class="box">
-      <input type="submit" name="submit" value="login now" class="btn">
+      <input type="email" name="email" placeholder="Masukkan Email Anda" required class="box">
+      <input type="password" name="password" placeholder="Masukkan Kata Sandi Anda" required class="box">
+      <input type="submit" name="submit" value="Login Sekarang" class="btn">
       <p>Tidak mempunyai akun? <a href="register.php">Daftarkan Sekarang!</a></p>
    </form>
 
