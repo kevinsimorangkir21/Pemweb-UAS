@@ -16,10 +16,10 @@ if(isset($_POST['submit'])){
       $message[] = 'user already exist!';
    }else{
       if($pass != $cpass){
-         $message[] = 'confirm password not matched!';
+         $message[] = 'Konfirm Password Tidak Sesuai!';
       }else{
          mysqli_query($conn, "INSERT INTO `users`(name, email, password, user_type) VALUES('$name', '$email', '$cpass', '$user_type')") or die('query failed');
-         $message[] = 'registered successfully!';
+         $message[] = 'Telah Sukses Terdaftar';
          header('location:login.php');
       }
    }
@@ -63,8 +63,8 @@ if(isset($message)){
       <h3>Daftarkan Sekarang!</h3>
       <input type="text" name="name" placeholder="Masukkan Nama Anda" required class="box">
       <input type="email" name="email" placeholder="Masukkan Email Anda" required class="box">
-      <input type="password" name="password" placeholder="Masukkan Password Anda" required class="box">
-      <input type="password" name="cpassword" placeholder="confirm your password" required class="box">
+      <input type="password" name="password" placeholder="Masukkan Kata Sandi Anda" required class="box">
+      <input type="password" name="cpassword" placeholder="Konfirm Kata Sandi Anda" required class="box">
       <select name="user_type" class="box">
          <option value="user">User</option>
          <option value="admin">Admin</option>
