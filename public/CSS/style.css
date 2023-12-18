@@ -24,7 +24,7 @@
 }
 
 *::selection{
-   background-color: var(--purple);
+   background-color: #00fff7;
    color:var(--white);
 }
 
@@ -38,7 +38,7 @@
 }
 
 *::-webkit-scrollbar-thumb{
-   background-color: var(--purple);
+   background-color: #00fff7;
 }
 
 html{
